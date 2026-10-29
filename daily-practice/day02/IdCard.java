@@ -1,6 +1,6 @@
 package day02;
 
-public class IdCard{
+public class IdCard {
     public String name;
     private int age;
     public double height;
@@ -11,35 +11,23 @@ public class IdCard{
         this.height = height;
         this.atschool = atschool;
     }
-    public void setName(String name){
-        this.name = name;
-    }
-    public void setHeight(double height){
-        this.height = height;
-    }
-    public void setAtschool(String atschool){
-        this.atschool = atschool;
-    }
     public void setAge(int age){
         this.age = age;
     }
-
+    public int getAge(){
+        return this.age;
+    }
     public String getName(){
         return this.name;
     }
-    public int getHeight(){
-        return (int) this.height;
+    public double getHeight(){
+        return this.height;
     }
     public String getAtschool(){
         return this.atschool;
     }
-    public double getAge(){
-        return this.age;
-    }
 
     public static void main(String[] args) {
-        IdCard idCard = new IdCard("张三", 1.75, "是");
-        idCard.setAge(18);
 
         int num = 10;
         double num1 = num;
@@ -48,7 +36,9 @@ public class IdCard{
         double d = 10.0;
         int num2 = (int) d;
         System.out.println(d + "自动转换 double→int" + num2);
+
+        IdCard idCard = new IdCard("张三", 1.75, "是");
+        idCard.setAge(18);
         System.out.println(idCard.getName() + " " + idCard.getAge() + " " + idCard.getHeight() + " " + idCard.getAtschool());
     }
 }
-
