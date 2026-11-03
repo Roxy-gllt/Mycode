@@ -5,6 +5,7 @@ import java.util.LinkedHashSet;
 import java.util.List;
 
 public class ArrayUtil {
+    // 打印数组
     public static void printArray(int[] arr){
         System.out.print("[");
         for(int i = 0; i < arr.length; i++){
